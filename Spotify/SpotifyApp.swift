@@ -6,12 +6,13 @@
 //
 
 import SwiftUI
+import Combine
 
 @main
 struct SpotifyApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            AlbumListView(viewModel: AlbumListViewModel())
         }
     }
 }
